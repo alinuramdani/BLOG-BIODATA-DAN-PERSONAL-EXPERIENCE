@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ali Nur Ramdani — Blog Pribadi</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f4;--card:#fff;--text:#1d2433;--muted:#667085;--accent:#1f6feb;--accent2:#e8590c;--line:#e7e2d8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141c;--card:#181e29;--text:#eef1f6;--muted:#9aa4b5;--accent:#5b9dff;--accent2:#ff8a4c;--line:#2a3243}}
+:root[data-theme="dark"]{--bg:#10141c;--card:#181e29;--text:#eef1f6;--muted:#9aa4b5;--accent:#5b9dff;--accent2:#ff8a4c;--line:#2a3243}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:600}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.92rem;font-weight:500}
+nav a:hover{color:var(--accent)}
+.logo{font-family:Fraunces,Georgia,serif;font-size:1.2rem}
+.hero{padding:56px 0 40px}
+.tag{display:inline-block;font-size:.8rem;color:var(--accent2);border:1px solid var(--accent2);border-radius:99px;padding:3px 12px;margin-bottom:16px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.1;margin:0 0 16px}
+h1 span{color:var(--accent)}
+.lead{color:var(--muted);font-size:1.1rem;max-width:600px}
+h2{font-family:Fraunces,Georgia,serif;font-size:1.7rem;margin:0 0 18px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.02rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.ico{font-size:1.6rem;margin-bottom:8px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
+dt{color:var(--muted)}dd{margin:0;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.9rem}
+.post small{color:var(--accent2);font-weight:600}
+footer{padding:30px 0;color:var(--muted);font-size:.88rem;text-align:center;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span class="logo">Ali.</span><div><a href="#tentang">Tentang</a><a href="#pengalaman">Pengalaman</a><a href="#minat">Minat</a><a href="#catatan">Catatan</a></div></nav>
+
+<header class="hero">
+<span class="tag">Mahasiswa · IT &amp; Bahasa</span>
+<h1>Halo, saya <span>Ali Nur Ramdani</span>.</h1>
+<p class="lead">Selamat datang di blog pribadi saya, tempat saya menulis catatan, pengalaman, dan perjalanan belajar di dunia teknologi dan bahasa.</p>
+</header>
+
+<section id="tentang">
+<h2>Tentang Saya</h2>
+<div class="card"><dl>
+<dt>Nama</dt><dd>Ali Nur Ramdani</dd>
+<dt>Lahir</dt><dd>31 Agustus 2008, Bekasi</dd>
+<dt>Kampus</dt><dd>Universitas Pelita Bangsa</dd>
+</dl></div>
+</section>
+
+<section id="pengalaman">
+<h2>Pengalaman</h2>
+<div class="grid">
+<div class="card"><div class="ico">🎖️</div><h3>OSIS</h3><p>Aktif sebagai pengurus OSIS selama masa SMA.</p></div>
+<div class="card"><div class="ico">🤝</div><h3>Organisasi</h3><p>Aktif di berbagai organisasi, baik di dalam maupun di luar sekolah.</p></div>
+<div class="card"><div class="ico">🗣️</div><h3>English Club</h3><p>Anggota ekstrakurikuler English Club untuk mengasah kemampuan bahasa Inggris.</p></div>
+<div class="card"><div class="ico">🏆</div><h3>Peringkat 1</h3><p>Meraih peringkat 1 selama kelas 10 sampai 12.</p></div>
+</div>
+</section>
+
+<section id="minat">
+<h2>Minat &amp; Portofolio</h2>
+<p style="color:var(--muted)">Portofolio profesional saya ada di bagian-bagian di atas. Saya sangat tertarik pada:</p>
+<div class="chips"><span class="chip">💻 Teknologi Informasi</span><span class="chip">🌍 Bahasa</span><span class="chip">🎓 Kepemimpinan</span><span class="chip">📚 Belajar Terus</span></div>
+</section>
+
+<section id="catatan">
+<h2>Catatan Pribadi</h2>
+<div class="grid">
+<article class="card post"><small>Pengalaman</small><h3>Belajar Memimpin dari OSIS</h3><p>Cerita tentang bagaimana organisasi mengajarkan tanggung jawab dan kerja sama tim.</p></article>
+<article class="card post"><small>Bahasa</small><h3>Bersama English Club</h3><p>Catatan seputar belajar bahasa Inggris dan percaya diri berbicara.</p></article>
+<article class="card post"><small>IT</small><h3>Langkah Awal di Dunia IT</h3><p>Perjalanan awal saya menekuni teknologi di bangku kuliah.</p></article>
+</div>
+</section>
+
+<footer>© 2026 Ali Nur Ramdani · Universitas Pelita Bangsa</footer>
+</div>
+</body>
+</html>
